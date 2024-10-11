@@ -1,0 +1,13 @@
+package np.com.lashman.challenge4.database
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "characters")
+data class CharacterEntity(
+    @PrimaryKey val id: Int,
+    val name: String,
+    val species: String,
+    val gender: String,
+    val image: String
+)
